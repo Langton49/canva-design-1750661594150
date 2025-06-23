@@ -1,0 +1,132 @@
+.contactSection {
+  display: flex;
+  min-height: 450px;
+  width: 100%;
+  background: #184034;
+}
+
+.contactLeft {
+  flex: 1.16;
+  background: #184034;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 48px;
+  color: #fff;
+}
+
+.contactTextWrap {
+  max-width: 480px;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.contactHeading {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px 0;
+}
+.contactSubhead {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.contactBody {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.contactDetail {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 9px;
+}
+.contactLink {
+  color: #FFC51A;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.22s;
+}
+.contactLink:hover {
+  color: #e3b400;
+}
+.contactButtonWrap {
+  margin-top: 24px;
+}
+.ctaButton {
+  background: #FFC51A;
+  color: #184034;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-radius: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.16);
+  border: 2px solid #184034;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.03em;
+}
+.ctaButton:hover, .ctaButton:focus {
+  background: #e3b400;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.19);
+}
+
+.contactRight {
+  flex: 0.95;
+  background: #fff;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-width: 0;
+}
+.contactImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  max-height: 540px;
+  border: none;
+}
+@media (max-width: 900px) {
+  .contactSection {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .contactLeft {
+    padding: 32px 24px 0 24px;
+    justify-content: center;
+  }
+  .contactTextWrap {
+    padding: 32px 0 16px 0;
+    gap: 18px;
+  }
+  .contactRight {
+    max-height: 270px;
+  }
+  .contactImage {
+    max-height: 320px;
+    min-height: 180px;
+  }
+}
+@media (max-width: 600px) {
+  .contactSection {
+    flex-direction: column;
+  }
+  .contactLeft {
+    padding: 24px 12px 0 12px;
+  }
+  .contactHeading {
+    font-size: 29px;
+  }
+  .contactSubhead, .contactBody, .contactDetail {
+    font-size: 13px;
+  }
+  .ctaButton {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+}
